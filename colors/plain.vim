@@ -121,7 +121,7 @@ function! s:h(group, style)
 endfunction
 
 " __Normal__
-if has("gui")
+if has("gui") || has("gui_vimr")
     call s:h("Normal",        {"fg": s:norm, "bg": s:bg})
     call s:h("Cursor",        {"fg": s:bg, "bg": s:norm})
 else
